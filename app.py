@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'Hello BOTNOI !'
+    return 'Welcome !'
 
 @app.route('/predict')
 def predict():
