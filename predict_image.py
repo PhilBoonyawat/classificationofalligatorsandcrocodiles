@@ -4,7 +4,7 @@ from botnoi import cv
 import numpy as np
 
 ### load model
-modfile = 'mymod.mod'
+modfile = '/Users/boonyawatariyawatkul/Desktop/botnoi-cv-detect/mymod.mod'
 pickle.load(open(modfile,'rb'))
 def predictimg(imgurl):
   a = cv.image(imgurl)
