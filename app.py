@@ -10,7 +10,7 @@ def index():
 @app.route('/predict')
 def predict():
     p_image_url = request.values['p_image_url']
-    res = pi.predicting(p_image_url)
+    res = pi.predictimg(p_image_url)
     result = {'result':res}
     return jsonify(result)
 
