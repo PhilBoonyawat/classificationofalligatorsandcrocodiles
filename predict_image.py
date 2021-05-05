@@ -9,5 +9,5 @@ model = pickle.load(open(modfile,'rb'))
 def predictimg(imgurl):
   a = cv.image(imgurl)
   feat = a.getresnet50()
-  res = model.predict([feat])
+  res = model.predict([feat])[0]
   return res
