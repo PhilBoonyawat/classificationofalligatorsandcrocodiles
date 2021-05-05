@@ -5,7 +5,7 @@ import numpy as np
 
 ### load model
 modfile = 'mymod.mod'
-pickle.load(open(modfile,'rb'))
+model = pickle.load(open(modfile,'rb'))
 def predictimg(imgurl):
   a = cv.image(imgurl)
   feat = a.getresnet50()
